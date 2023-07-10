@@ -1,7 +1,6 @@
 import { View, ScrollView} from "react-native";
 import NewsItem from "./NewsItem";
 import { useContext } from "react";
-// import { NewsContext } from "../App";
 import { NewsContext } from "../screens/NewsScreen";
 import { FlatList, RefreshControl  } from "react-native";
 
