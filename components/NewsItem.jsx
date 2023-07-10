@@ -19,7 +19,6 @@ function NewsItem({ body, date, title }) {
   function onPressToFullNews() {
     setShowFullNews(!showFullNews);
   }
- //функция которая находит в тексте ссылки на сайты и ссылки на изображения и оборачивает их в нужные теги
   function findLinksAndImages(text) {
     const imgRegex = /<img[^>]+src="?([^"\s]+)"?\s*\/?>/g;
     const linkRegex = /<a href="([^"]+)">([^<]+)<\/a>/g;
