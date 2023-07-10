@@ -9,8 +9,6 @@ import { FlatList, RefreshControl  } from "react-native";
 function NewsList() {
   const { news, isLoading, getNews } = useContext(NewsContext);
 
-  console.log(getNews)
-
   return (
       <FlatList
         refreshControl={<RefreshControl refreshing={isLoading} onRefresh={getNews} />}
